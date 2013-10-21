@@ -1,0 +1,56 @@
+<div id="tpl_alm_form_modificar_egreso_detalle" style="display:none;" title="Nuevo Egreso Almacenes">
+	<h3><img src="../img/alm_egr_32x32.png" align="absmiddle"> Registrar Nuevo Egreso</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_mdificar_egreso_cab">
+    <table  border="0" id="tb_cab_mod" align="center">
+      <tr>
+        <td colspan="2" rowspan="2" align="center" valign="middle"><img src="../img/logo.png" align="absmiddle" width="235" height="45"></td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+        <td><h2><label for="numero_unico" id="nro_nota">NRO:</label><input type="text" name="nro_nota_edit" id="nro_nota_edit" class="txt_campo" readonly="readonly"></h2></td>
+      </tr>
+      <tr>
+        <td colspan="6"><h2><center>NOTA DE ENTREGA</center></center></h2></td>
+      </tr>
+      <tr>
+        <td ><label for="textfield">NOMBRE :</label></td>
+        <td ><input type="text" name="alm_nom_egre_edit" id="alm_nom_egre_edit" class="txt_campo">
+             <input type="hidden" name="alm_unico_egre_edit" id="alm_unico_egre_edit" class="txt_campo">
+            <input type="hidden" name="alm_motivo_egre_edit_01" id="alm_motivo_egre_edit_01" class="txt_campo"><div id="div_error_nombre"></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td><label for="textfield">FECHA :</label></td>
+        <td><input type="text" name="alm_fec_egre_edit" id="alm_fec_egre_edit" class="txt_campo"><div id="div_error_fecha"></td>
+      </tr>
+      <tr>
+        <td><label for="textfield">ORIGEN :</label></td>
+        <td>{origen}<div id="div_error_motivo"></select></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td><label for="textfield">DESTINO :</label></td>
+        <td>{destino}<div id="div_error_destino"></select></td>
+      </tr>
+      
+    </table>
+    <p>
+     <center> <input type="submit" value="Modificar Nota de Entrega" id="bt_submit_alm_nuevo_ingreso" class="btn_form" ><input type="button" value="Cancelar" class="btn_form" onclick="new Index().closeDialogModificarIngreso();"></center>
+      <br><br>
+        <hr style="border:1px dashed;">
+        <div id="btn_acciones">
+          
+        </div>
+      <table border="0" id="tb_item_det" >
+        
+      </table>
+        <!--input type="button" value="Ingresar Items" id="btn_items_det_list" class="btn_form" onclick="new Index().eliminarNotaEntrega(\''+ingresos.alm_ing_egr_det_cod_int+'\')"-->
+      <table border="0" id="tb_mod_det" class="table_usuario">
+        
+      </table>
+       
+	</form>
+</div>

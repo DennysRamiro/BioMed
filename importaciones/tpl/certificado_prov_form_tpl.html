@@ -1,0 +1,50 @@
+<div id="formulario_nuevo_certificado_prov" title="Certificado" style="display:none; width: 300px;" >
+ <!--form name="form2" method="post" action="alm_gest_imp_grab.php" onSubmit="return ValidaCamposAltaContrato(this)"-->
+         <table id="tabla_nuevo_certificado_prov" align="center" BORDER="0">
+            <tr>
+                <td align="right"><strong>C&oacute;digo Proyecto :</strong></td> 
+                     <td>
+                     <label id="label_codigos_proyectos_certp"></label><input type="hidden" value="" id="codigos_proyectos_hidden_certprov" />
+                     </td>  
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><strong>C&oacute;digo Proveedor :</strong></td> 
+                     <td>
+                     <label id="label_codigos_proveedor_certp"></label><input type="hidden" value="" id="codigos_proveedor_hidden_certp" />
+                     </td>  
+                </td>
+            </tr>     
+             
+              <tr>
+                    <td align="right"><strong>N&uacute;mero de Documento :</strong></td>
+                   <td><input  class="txt_campo" name="nro_doc_certp" id="nro_doc_certp" cols="50" rows="2"><div id="error_nro_doc_certp"></div>
+                   </td>
+             </tr>
+              <tr>
+                   <td align="right"><strong>Fecha Documento :</strong></td> 
+                   <td><input class="txt_campo" type="text" name="fec_doc_certp" maxlength="60"id="fec_doc_certp">
+                   <div id="error_fec_doc_certp"></div>
+                   </td>
+             </tr>
+             <tr>
+             <td align="right"><strong>Comisi&oacute;n del Certificado :</strong></td> 
+               <td><input class="txt_campo" type="number" name="comis_certp_otros" maxlength="60"id="comis_certp_otros">
+                   <div id="error_comis_certp_otros"></div>
+             </td>
+            </tr>
+
+             <tr>
+                 <td align="right"><strong>Observaciones :</strong></td>
+                 <td><textarea  name="obs_certp" id="obs_certp" cols="50" rows="2"></textarea>            
+                   <div id="error_obs_certp"></div>
+                 </td>
+            </tr>
+            <!--table align="left"-->
+             <tr>
+                 <td></td>
+    			       <td> <br><input class="btn_form" type="button" name="accion" value="Grabar" onclick="new GestionImportacion().grabarformularioNuevoCertificadoProv()"></td>
+           </tr>
+       </table>
+    <!--/form-->
+</div>

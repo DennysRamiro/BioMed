@@ -1,0 +1,29 @@
+<div id="formulario_lista_certificado_ban" title="Lista Certificados Bancarios" style="display:none; width: 300px;" >
+ <div id="tabla_datos_certificado_ban">
+ 	  <label><strong>CODIGO PROYECTO:</strong> </label><span id="codigo_proyecto_cb_div"></span><br>
+      <input type="hidden" value="" id="id_proyecto_cb_hidden"/>
+      <input type="hidden" id="codigos_proyecto_cb_hidden" value=""/><br>
+      
+     <input type="button" value="Nuevo Certificado Bancario" class="btn_form" onClick="new GestionImportacion().formularioNuevoCertificado(id_proyecto_cb_hidden,codigo_proyecto_cb_div);"> 
+ 
+               <table  class="table_usuario">
+                            <tr>
+                                <th align="center">NRO. CERTIFICADO</th>
+                                <th align="center">FECHA CERTIFICADO</th>
+                                <th align="center">COMISI&oacute;N CERTIFICADO</th>
+                                <th align="center">OBSERVACIONES</th> 
+                                <th align="center">ACCIONES</th>  
+                            </tr> 					
+                            <tr class="tr_usuario">
+                                <td align="center"></td>
+                                <td align="center"></td>
+                                <td align="center"></td>
+                                <td><div style="float:left;width:42px; text-align:center;margin-right:5px; margin-left:0px;"> <a  onclick="new GestionImportacion().formularioDetallarCertificado('+value.alm_form_id+')"><img src="../img/notepad_32x32.png" align="absmiddle"><br> Detallar</a></div><div style="float:left;width:40px; margin-right:10px; text-align:center; cursor:pointer;"> <a  onclick="new GestionImportacion().formularioDetallarCertificado('+value.alm_form_id+')"><img src="../img/certificado_delete_32x32.png"><br>Dar Baja</a></div> </td> 
+                            </tr>
+           </table>
+                             <tr align="center">
+                                <td> <br><input class="btn_form" type="button" name="accion" value="Procesar" onClick="new Proyecto().actualizaEstadoProyecto(codigos_proyecto_cb_hidden,9);"></td>
+                            </tr> 
+
+		</div>
+	</div> 

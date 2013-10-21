@@ -1,0 +1,234 @@
+<div id="formulario_hoja_costo" title="Hoja de Costo" style="display:none;">
+    <div id="cabecera_hoja">
+     		<table id="titulos" align="center">
+	            <th>HOJA DE COSTO</th>
+              <!-- Nombre de  form agencia-->
+	            <tr>
+                <td><strong>Codigo Proyecto:</strong></td> 
+                  <td> <label id="codigo_proyecto_hoja"></label></td>
+                      <br><br>
+                  <input type="hidden"  id="codigo_proyecto_hidden_hj"/>
+                  <input type="hidden"  id="nro_orden_hidden_hj"/>
+                  <input type="hidden"  id="cod_prov_hidden_hj"/>
+                  <input type="hidden"  id="cod_ref_hidden_hj"/>
+                
+              </tr> 
+        </table>
+         <br>
+
+        <table id="encabezado" align="left" border="1">
+               
+                <tr> 
+                  <td rowspan="3"><img src="../img/logo.png" width="300" height="45"></td>
+                  <td align="right"><strong>IMPORTACION No:</strong></td>
+                  <td align="right"> {nro_imp}</td>
+                </tr>
+                <tr>  
+	                 <td align="right"><strong>PROVEEDOR:</strong></td> 
+	                 <td align="right">{prov}</td>
+                </tr>
+                 <tr>  
+                   <td align="right"><strong>TIPO DE CAMBIO:</strong></td> 
+                   <td align="right">{tc}</td>
+                </tr>
+				 </table>
+         <br><br><br><br><br> 
+           <table id="cabecera" border="1"  width="800" height="45">
+         		  <tr>
+                          
+                    <td align="center" colspan="2"> <b>DESCRIPCION</b></td>
+                    <td align="center"><b>BOLIVIANOS</b></td>
+                    <td align="center"><b>RESPALDO DOCUMENTARIO</b></td>
+              </tr> 
+
+              <tr>    
+                    <td align="left" colspan="2"> <b>A COSTO VALOR FOB (IMPORTE DE TRANFERENCIA)</b></td>
+                    <td>{costo_fob}</td>
+                    
+              
+              </tr>
+              <tr>    
+                    <td colspan="2">{det_fob}</td>
+                    <td>{costo_fob_det}</td>
+                    <td>{res_fob}</td>
+              </tr> 
+              
+              <tr>    
+                    <td align="left" colspan="2"><b>B COSTO TRANSITO INTERNACIONAL</b></td>
+                    <td>{costo_tran}</td>
+                  
+              </tr>
+              <tr>       
+                    <td colspan="2">{det_trans}</td>
+                    <td>{costo_tran_det}</td>
+                    <td>{res_tran}</td>
+
+              </tr>
+              
+
+              <tr>  
+                    <td align="left"  colspan="2"><b>C COSTO DESADUANIZACION</b></td>
+                    <td>{costo_des}</td>
+
+              </tr>
+              <tr>
+                    <td colspan="2">{det_desa}</td>
+                    <td>{costo_des_det}</td>
+                    <td>{res_des}</td>
+
+              </tr> 
+
+                <tr>  
+                    <td align="left"  colspan="2"><b>D COSTO ADICIONALES</b></td>
+                    <td>{costo_adi}</td>
+
+              </tr>
+              <tr>
+                    <td colspan="2">{det_adi}</td>
+                    <td>{costo_adi_det}</td>
+                    <td>{res_adi}</td>
+
+              </tr> 
+
+                
+          </table>
+          <br>
+             <table id="resumen_cabecera"  border="1"  width="800" height="45">
+              <tr>
+                          
+                    <td align="center" colspan="2"> <b>RESUMEN</b></td>
+                    <td align="center"><b>BS</b></td>
+                    <td align="center"><b>U$D</b></td>
+              </tr> 
+
+              <tr>    
+                    <td align="left" colspan="2"> <b>A COSTO VALOR FOB (IMPORTE DE TRANFERENCIA)</b></td>
+                    <td>{costo_fob_bs}</td>
+                    <td>{costo_fob_sus}</td>
+                    
+              
+              </tr>
+              
+              <tr>    
+                    <td align="left" colspan="2"><b>B COSTO TRANSITO INTERNACIONAL</b></td>
+                    <td>{costo_tran_bs}</td>
+                    <td>{costo_tran_sus}</td>
+                  
+              </tr>
+              
+              <tr>  
+                    <td align="left"  colspan="2"><b>C COSTO DESADUANIZACION</b></td>
+                    <td>{costo_des_bs}</td>
+                    <td>{costo_des_sus}</td>
+
+              </tr>
+
+               <tr>  
+                    <td align="left"  colspan="2"><b>D COSTO ADICIONALES</b></td>
+                    <td>{costo_adi_bs}</td>
+                    <td>{costo_adi_sus}</td>
+
+              </tr>
+              
+          </table>
+          <br>
+        <table  id="titulo2" align="center">
+              <th>DETERMINACI&Oacute;N DEL COSTO UNIT&Aacute;RIO</th>
+              <!-- Nombre de  form agencia-->
+        </table>
+          <br>
+        <table id="encabezado2"  align="left" border="1">
+               
+                <tr> 
+                  <td rowspan="3"><img src="../img/logo.png" width="300" height="45"></td>
+                  <td align="right"><strong>IMPORTACION No:</strong></td>
+                  <td align="right"> {nro_imp}</td>
+                </tr>
+                <tr>  
+                   <td align="right"><strong>PROVEEDOR:</strong></td> 
+                   <td align="right">{prov}</td>
+                </tr>
+                 <tr>  
+                   <td align="right"><strong>TIPO DE CAMBIO:</strong></td> 
+                   <td align="right">{tc}</td>
+                </tr>
+         </table>
+    </div>
+        <br><br><br><br><br><br><br>
+
+  <form id="formDetHoja" >
+    <div id="detalle_hoja">
+         <table id="detalle_costo"  border="1"  width="1150" height="45">
+              <tr>
+                    <td align="center"><b>NRO</b></td> 
+                    <td align="center"><b>CODIGO EXTERNO</b></td>
+                    <td align="center"><b>CODIGO INTERNO</b></td>        
+                    <td align="center" colspan="4"> <b>DETALLE DE ITEMS IMPORTADOS</b></td>
+                    <td align="center"><b>REFERENCIA</b></td>
+                    <td align="center"><b>CANT.</b></td>
+                    <td align="center"><b>P/U FOB</b></td>
+                    <td align="center"><b>TOT. FOB.</b></td>
+                    <td align="center"><b>% Part</b></td>
+                    <td align="center"><b>COSTO TOTAL</b></td>
+                    <td align="center"><b>COSTO UNIT&Aacute;RIO</b></td>
+                    <td align="center"><b>PRECIO DE VENTA UNIT&Aacute;RIO</b></td>
+              </tr> 
+              <tr>    
+                    <td>{nro}</td>
+                    <td>{cod_ext}</td>
+                    <td>{cod_int}</td>
+                    <td colspan="4">{det_items}</td>
+                    <td>{ref}</td>
+                    <td>{cant}</td>
+                    <td>{pu_fob}</td>
+                    <td>{tot_fob}</td>
+                    <td>{por_part}</td>
+                    <td>{costo_tot}</td>
+                    <td>{costo_pu}</td>
+                    <td>{pv_pu}</td>
+                    
+              
+              </tr>
+              <tr>
+
+                    <td align="center" colspan="9"><b>TOTAL</b></td>
+                    <td>{gra_tot_fob}</td>
+                    <td>{tot_por_part}</td>
+                    <td>{gran_costo_tot}</td> 
+
+              </tr>
+
+        </table>
+      </div>
+      <div id="adicionales">
+      <table id="datos_adicionales" border="1" width="500">
+         <tr><td ><strong>Apoyo A la Organizaci&oacute;n :</strong></td>
+             <td><input  class="txt_campo" name="por_apoyo" id="por_apoyo" cols="50" rows="2" value="0">%
+                 <div id="error_por_apoyo"></div>
+             </td>
+         </tr>
+        <tr><td ><strong>Utilidad :</strong></td>
+            <td><input  class="txt_campo" name="por_util" id="por_util" cols="50" rows="2" value="0">%
+                <div id="error_por_util"></div>
+            </td>
+        </tr>
+        <tr><td ><strong>Impuestos :</strong></td>
+            <td><input  class="txt_campo" name="por_imp" id="por_imp" cols="50" rows="2" value="0">%
+                <div id="error_por_imp"></div>
+            </td>
+        </tr>
+
+        <tr><td align="center" colspan="2"> <br><input class="btn_form" type="button" name="accion" value="Actualizar Datos" onclick="new GestionImportacion().actualizarDetalleHoja()"></td>
+        </tr>
+
+      </table>
+      </div>
+          <br><br>
+               <table id="boton"  align="center">
+                 <tr>
+				            <td><br><input class="btn_form" type="submit" name="accion" value="Ingresar a Almacen"></td>
+                 
+                    <td><br><input class="btn_form" type="button" name="accion" value="Cancelar" onClick="new GestionImportacion().cancelarHojaCosto();"></td></tr>
+                </table>
+  </form>
+</div>

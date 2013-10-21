@@ -1,0 +1,26 @@
+<div id="tpl_alm_form_nuevo_traspaso" style="display:none;" title="Nuevo Traspaso Almacenes">
+	<h3><img src="../img/traspaso_alm_32x32.png" align="absmiddle"> Registrar Nuevo Traspaso</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_nuevo_traspaso">
+
+
+  <table  border="0">
+  <tr>
+    <td ><label for="textfield"><strong>OPERADOR :</strong></label></td>
+    <td >{nombre_almacenero_trasp}<input type="hidden" name="alm_motivo_trasp" id="alm_motivo_trasp" class="txt_campo" ></td>
+    <td><label for="textfield"><strong>FECHA :</strong></label></td>
+    <td><input type="text" name="alm_fec_trasp" id="alm_fec_trasp" class="txt_campo"><div id="div_error_fecha_trasp"></td>
+  </tr>
+  <tr>
+    <td><label for="textfield"><strong>ORIGEN :</strong></label></td>
+    <td>{origen_trasp}<div id="div_error_motivo_trasp"></select></td>
+    <td><label for="textfield"><strong>DESTINO :</strong></label></td>
+    <td>{destino_trasp}<div id="div_error_destino_trasp"></select></td>
+  </tr>
+  
+</table><br>
+<center><input type="submit" value="Registrar Traspaso" id="bt_submit_alm_nuevo_traspaso" class="btn_form" ><input type="button" value="Cancelar" class="btn_form" onclick="new Traspaso().cancelarCabTraspaso()"></center>
+
+	</form>
+  
+</div>

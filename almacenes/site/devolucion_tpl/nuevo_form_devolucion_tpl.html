@@ -1,0 +1,38 @@
+<div id="tpl_alm_form_nueva_devolucion" style="display:none;" title="Nueva Devolucion Almacenes">
+  <h3><img src="../img/devolucion_alm_32x32.png" align="absmiddle"> Registrar Nueva Devolucion</h3>
+  <hr style="border:1px dashed;">
+  <form id="form_alm_nueva_devolucion">
+
+
+  <table  border="0">
+  <tr>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td><!--label for="textfield5">NRO:</label><input type="text" name="alm_nro_ing" id="alm_nro_ing" value="123456" readonly="readonly" class="txt_campo"--></td>
+  </tr>
+  <tr>
+    <td ><label for="textfield">OPERADOR :</label></td>
+    <td >{nombre_almacenero}<input type="hidden" name="alm_motivo_dev" id="alm_motivo_dev" class="txt_campo" ></td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td><label for="textfield">FECHA :</label></td>
+    <td><input type="text" name="alm_fec_dev" id="alm_fec_dev" class="txt_campo"><div id="div_error_fecha_dev"></td>
+  </tr>
+  <tr>
+    <td><label for="textfield">ORIGEN :</label></td>
+    <td>{origen}<div id="div_error_motivo_dev"></select></td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td><label for="textfield">DESTINO :</label></td>
+    <td>{destino}<div id="div_error_destino_dev"></select></td>
+  </tr>
+  
+</table><br>
+<center><input type="submit" value="Registrar Nueva Devolucion" id="bt_submit_alm_nueva_dev" class="btn_form" ><input type="button" value="Cancelar" class="btn_form" onclick="new Devolucion().cancelarCabDevolucion()"></center>
+
+  </form>
+  
+</div>

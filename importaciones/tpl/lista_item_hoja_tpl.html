@@ -1,0 +1,29 @@
+<div id="formulario_lista_items_hoja" title="Lista Items Hoja Costo" style="display:none; width: 300px;" >
+ <div id="tabla_datos_items">
+ 	  <label><strong>CODIGO PROYECTO:</strong> </label><span id="codigo_proyecto_c_div"></span><br>
+      <input type="hidden" value="" id="id_proyecto_it_hidden"/>
+      <input type="hidden" id="codigos_proyecto_it_hidden" value=""/><br>
+ 
+               <table  class="table_usuario">
+                            <tr>
+                                <th align="center">NRO</th>
+                                <th align="center">DESCRIPCION ITEM</th>
+                                <th align="center">CANTIDAD</th>
+                                <th align="center">PRECIO UNITARIO</th>
+                                <th align="center">UNIDAD</th> 
+                                <th align="center">MONEDA</th>  
+                                <th align="center">ACCIONES</th>  
+                            </tr> 					
+                            <tr class="tr_usuario">
+                                <td align="center"></td>
+                                <td align="center"></td>
+                                <td align="center"></td>
+                                <td><div style="float:left;width:42px; text-align:center;margin-right:5px; margin-left:0px;"> <a  onclick="new GestionImportacion().formularioDetallarCertificado('+value.alm_form_id+')"><img src="../img/notepad_32x32.png" align="absmiddle"><br>Agregar</a></div></td> 
+                            </tr>
+           </table>
+                             <tr align="center">
+                                <td> <br><input class="btn_form" type="button" name="accion" value="Procesar" onClick="new Proyecto().actualizaEstadoProyecto();"></td>
+                            </tr> 
+
+		</div>
+	</div> 

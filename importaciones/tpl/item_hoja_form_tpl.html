@@ -1,0 +1,86 @@
+<div id="formulario_nuevo_item" title="Items Hoja Costo" style="display:none; width: 300px;" >
+ <!--form name="form2" method="post" action="alm_gest_imp_grab.php" onSubmit="return ValidaCamposAltaContrato(this)"-->
+<div id="tabla_datos_detalle_item">
+             <label><strong>CODIGO PROYECTO:</strong> </label><span id="codigo_proyecto_detalle_ge_div"></span><br>
+      <input type="hidden" value="" id="id_ge_detalles_hidden"/>
+      <input type="hidden" id="codigos_proyecto_ge_hidden" value=""/><br>
+
+            <table>     
+             
+            <tr>
+               <td align="right"><strong>Nombre Item :</strong></td>
+               <td><input  class="txt_campo" name="nom_it" id="nom_it" cols="50" rows="2"><div id="error_nom_it"></div>
+               </td>
+            </tr>
+
+            <tr>
+             <td align="right"><strong>Codigo Referencia :</strong></td> 
+               <td><input class="txt_campo" type="text" name="cod_it" maxlength="60"id="cod_it">
+                   <div id="error_cod_it"></div>
+             </td>
+            </tr>
+
+            <tr>
+             <td align="right"><strong>Codigo Interno :</strong></td> 
+               <td><input class="txt_campo" type="text" name="cod_it" maxlength="60"id="cod_it">
+                   <div id="error_cod_it"></div>
+             </td>
+            </tr>
+
+           <tr>
+             <td align="right"><strong>Referencia :</strong></td> 
+               <td><input class="txt_campo" type="text" name="ref_it" maxlength="60"id="ref_it">
+                   <div id="error_ref_it"></div>
+             </td>
+            </tr>
+
+            <tr>
+             <td align="right"><strong>Cantidad :</strong></td> 
+               <td><input class="txt_campo" type="text" name="cant_it" maxlength="60"id="cant_it">
+                   <div id="error_cant_it"></div>
+             </td>
+            </tr>
+
+            <tr>
+             <td align="right"><strong>Precio Unitario :</strong></td> 
+               <td><input class="txt_campo" type="text" name="pu_it" maxlength="60"id="pu_it">
+                   <div id="error_pu_it"></div>
+             </td>
+            </tr>
+
+             <tr>
+             <td align="right"><strong>Unidad :</strong></td> 
+               <td><input class="txt_campo" type="text" name="pu_it" maxlength="60"id="pu_it">
+                   <div id="error_pu_it"></div>
+             </td>
+            </tr>
+
+             <tr>
+             <td align="right"><strong>Moneda :</strong></td> 
+               <td><input class="txt_campo" type="text" name="pu_it" maxlength="60"id="pu_it">
+                   <div id="error_pu_it"></div>
+             </td>
+            </tr>
+
+            <form id="radio">
+             <tr>
+                 <th align="right">Con Serie :</th>
+                 <td><input type="radio" name="serie_it"  value="1"></td>
+             </tr>
+             <tr>
+                 <th align="right">Sin Serie :</th>
+                 <td><input type="radio" name="serie_it"  value="0"></td>
+             </tr>
+           <!--/table-->
+            </form>
+              
+           <tr>
+             <td></td>
+			 <td> <br><input class="btn_form" type="submit" name="accion" value="Grabar" onclick="new GestionImportacion().grabarItemHoja()"></td>
+           </tr>
+       </table>
+    <!--/form-->
+</div>
+
+
+</div>

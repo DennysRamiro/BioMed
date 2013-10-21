@@ -1,0 +1,19 @@
+<div id="formulario_cert_seleccionar" title="Certificado" style="display:none; width: 300px;" >
+ <!--form name="form2" method="post" action="alm_gest_imp_grab.php" onSubmit="return ValidaCamposAltaContrato(this)"-->
+         <table id="tabla_cert_seleccionar" align="left" BORDER="1">
+          
+            <tr>
+              <td align="right"><strong>Seleccione una de las siguientes Opciones :</strong></td> 
+  
+            </tr>
+            <tr>
+              <td><label>Certificado Consolidado</label></td>
+              <td><div style="float:left;width:40px; margin-right:10px; text-align:center; cursor:pointer;"><a  onclick="new GestionImportacion().formularioCertificacionTransferenciaBancaria(\''+value.alm_proy_cod+'\',\''+value.alm_prov_codigo_int+'\');"><img src="../img/consolidado_32x32.png"><br>Consolidado</a></div></td>
+            </tr>
+            <tr>         
+              <td><label>Certificado por Proveedor</label></td> 
+              <td><div style="float:left;width:40px; margin-right:10px; text-align:center; cursor:pointer;"> <a  onclick="new GestionImportacion().formularioCertificacionTransferenciaBancaria(\''+value.alm_proy_cod+'\',\''+value.alm_prov_codigo_int+'\');"><img src="../img/listado_32x32.png"><br>Por Proveedor</a></div></td> 
+            </tr>
+       </table>
+    <!--/form-->
+</div>

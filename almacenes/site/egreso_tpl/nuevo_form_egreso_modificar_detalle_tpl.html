@@ -1,0 +1,46 @@
+<div id="tpl_alm_form_egreso_modificar_egreso_det" style="display:none;" title="Modificar Egreso Detalle">
+	<h3><img src="../img/alm_ing_32x32.png" align="absmiddle"> Modificar Nuevo Item</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_modificar_egreso_det">
+
+  <table border="0">
+  
+</tr>
+  <tr>
+     <td><label for="textfield4">Producto:</label></td>
+    <td><input type="text" name="alm_det_desc_egr_edit" id="alm_det_desc_egr_edit" class="txt_campo">
+        <input type="hidden" value="" name="cod_unico_producto_egr_edit" id="cod_unico_producto_egr_edit" />
+        <input type="hidden" value="" name="resto_ref" id="resto_ref" /><div id="div_error_descp"></div></td>
+
+    
+<td><label for="textfield3">Cantidad:</label></td>
+    <td><input type="text" name="alm_det_cantidad_egr_edit" id="alm_det_cantidad_egr_edit" class="txt_campo" onchange="new Index().buscaCantidad()"><div id="div_error_cantidad"></div></td>   
+  </tr>
+  <tr>
+    <td>Codigo Interno:</td>
+    <td><input type="text" name="alm_det_cod_int_egr_edit" id="alm_det_cod_int_egr_edit" class="txt_campo" readonly="readonly">
+        <input type="hidden" name="alm_det_cod_det_unico_edit" id="alm_det_cod_det_unico_edit" class="txt_campo">
+        <input type="hidden" name="alm_det_cod_det_unico_cab_edit" id="alm_det_cod_det_unico_cab_edit" class="txt_campo"><div id="div_error_cod_int"></div></td>
+
+
+
+    <td><label for="textfield2">Referencia:</label></td>
+    <td><input type="text" name="alm_det_ref_egr_edit" id="alm_det_ref_egr_edit" class="txt_campo">
+        <input type="hidden" name="alm_det_unico_cab_egr_edit" id="alm_det_unico_cab_egr_edit" class="txt_campo"><div id="div_error_ref"></div></td>
+
+
+  <tr>
+
+   <td><label for="textfield5">Unidad:</label></td>
+    <td><input type="text" name="alm_det_piezas_egr_edit" id="alm_det_piezas_egr_edit" class="txt_campo">
+        <input type="hidden" name="alm_det_piezas_cod_egr_edit" id="alm_det_piezas_cod_egr_edit" class="txt_campo"><div id="div_error_unidad"></div></td>
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+  
+        <br>
+        <center><input type="submit" value="Modificar Nuevo Egreso" id="bt_submit_alm_nuevo_egreso_det_edit" class="btn_form"><input type="button" value="Cancelar" id="btn_cancelar_egreso_modificar_Item" class="btn_form" onclick="new Egreso().cancelaModificacionItemsEgresoDetalle()"></center>
+	</form>
+</div>

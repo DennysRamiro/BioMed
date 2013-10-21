@@ -1,0 +1,26 @@
+<div id="formulario_lista_liquidacion" title="Lista Detalle Liquidacion" style="display:none; width: 300px;" >
+  <div id="tabla_datos_liquidacion">
+ 	  <label><strong>CODIGO PROYECTO:</strong> </label><span id="codigo_proyecto_liq_div"></span><br>
+      <input type="hidden" value="" id="id_proyecto_liq_hidden"/>
+      <input type="hidden" id="codigos_proyecto_liq_hidden" value=""/><br>
+ 
+               <table  class="table_usuario">
+                            <tr>
+                                <th align="center">PLANILLA NRO.</th>
+                                <th align="center">PROVEEDOR</th>
+                                <th align="center">MERCADERIA</th>
+                                <th align="center">ACCIONES</th>  
+                            </tr> 					
+                            <tr class="tr_usuario">
+                                <td align="center"></td>
+                                <td align="center"></td>
+                                <td align="center"></td>
+                                <td><div style="float:left;width:42px; text-align:center;margin-right:5px; margin-left:0px;"> <a  onclick="new GestionImportacion().formularioDetallarCertificado('+value.alm_form_id+')"><img src="../img/notepad_32x32.png" align="absmiddle"><br> Detallar</a></div></td> 
+                            </tr>
+               </table>
+                             <tr align="center">
+                                <td> <br><input class="btn_form" type="button" name="accion" value="Procesar" onClick="new Proyecto().actualizaEstadoProyecto(codigos_proyecto_c_hidden,9);"></td>
+                            </tr> 
+
+  </div>
+</div> 

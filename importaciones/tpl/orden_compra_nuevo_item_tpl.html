@@ -1,0 +1,57 @@
+<div id="formulario_nuevo_item_orden_nueva" title="International Purchase Order Form" style="display:none; width: 300px;" >
+	<h2>Nuevo Item Orden de Compra</h2>
+	<hr style="border:1px dashed;">
+        <table align="center">
+        		<tr>
+		             <td valign="top"><strong>PRODUCT TYPE:</strong></td>
+		             <td>
+		             	{product_type}
+		             </td>
+		        </tr>
+				 <!-- Fecha Orden-->
+	            <tr>
+		             <td valign="top"><strong>PART NUMBER :</strong></td>
+		             <td><input class="txt_campo" type="text" name="part_number_nuevo_item"  id="part_number_nuevo_item"><input type="hidden" name="codigo_proyecto_item" id="codigo_proyecto_item"> <input type="hidden" name="nro_referencia" id="nro_referencia"><input type="hidden" name="codigo_proforma" id="codigo_proforma">
+		             	 <div id="error_part_number_nuevo_item"></div>
+		             </td>
+		        </tr>
+				   <!-- Fecha Entrega Orden-->
+	            <tr>
+		             <td valign="top"><strong>DESCRIPTION :</strong></td> 
+		             <td><textarea class="txt_campo" name="description_nuevo_item"  id="description_nuevo_item"> </textarea>
+		             	 <div id="error_description_nuevo_item"></div>
+		             </td>
+				</tr>
+				   <!--Tipo de paga-->
+	            <tr> 
+	                  <td valign="top"><strong>QTY :</strong></td>
+	                  <td><input class="txt_campo" type="number" name="qty_nuevo_item"  id="qty_nuevo_item">
+		             	 <div id="error_qty_nuevo_item"></div></td>
+	            </tr>
+	               <!--Guia de transporte-->
+	             <tr>
+		            <td valign="top"><strong>UM :</strong></td>
+		            <td>
+	                    {unidad_item_producto} 	
+	                </td>
+				</tr>
+				 <tr>
+		             <td valign="top"><strong>UNIT PRICE :</strong></td>
+		             <td>
+	                  	<input class="txt_campo" type="number" name="unit_price_item_compra" maxlength="60" size="40" id="unit_price_item_compra">
+	                    <div id="error_unit_price_item_compra"></div>
+	                  </td>
+				</tr>
+				 <tr>
+		             <td valign="top"><strong>SERIAL NUMBER :</strong></td>
+		             <td>
+	                  	<input type="checkbox" name="serial_number" id="serial_number">Have a serial number
+	                 </td>
+				</tr>
+				<!--Boton Grabar Orden-->
+				<tr>
+		             <td></td>
+					 <td><br><input class="btn_form" type="botton" name="accion" value="Grabar Nuevo Item" onclick="new GestionImportacion().grabarNuevoItemComprado()"></td>
+				</tr>
+        </table>
+</div>

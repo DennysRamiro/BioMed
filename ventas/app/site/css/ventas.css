@@ -1,0 +1,67 @@
+/** Esta es la hora de estilo **/
+
+#menu_header_ventas{
+	margin-top: -5px;
+	margin-left: -40px;
+}
+#menu_header_ventas li{
+	display: inline-block;
+	margin-right: -3px;
+}
+#menu_header_ventas li a{
+	/*color: #FFF;*/
+	font-size: 12px;
+}
+#paginacion{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#titulo_paginacion{
+	float: left;
+}
+.pagina{
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #8D8D8D;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+.pagin a{
+	color: #FFF !important;
+}
+#paginacion_tabla{
+
+}
+#buscar_cliente{
+	right: 0px;
+}
+#txt_campo_palabra_buscar{
+	width: 350px;
+	height: 30px;
+}
+#div_detalle_producto_consulta{
+	border: 1px solid #8D8D8D;
+	margin-bottom: 5px;
+	padding: 5px;
+	height: 130px;
+	font-family:Tahoma;
+}
+#div_detalle_producto_consulta:hover{
+	background-color: #e5e5e5;
+}
+#div_detalle_producto_consulta h4{
+	margin-top:0px;
+	margin-bottom: 2px;
+}
+#div_detalle_producto_consulta #div_img_producto_consulta{
+	float: left;
+	width: 150px;
+	height: 100px;
+	border: 1px solid #8D8D8D;
+	margin-right: 5px;
+}
+.table_usuario{
+	margin-left: -10px !important;
+}

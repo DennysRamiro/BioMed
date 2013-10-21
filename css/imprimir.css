@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.div_impresora
+{
+   display:none;
+   /*margin-top:200px;*/
+}
+
+
+
+.div_imprimir
+{
+   display:block;
+   /*margin-top:200px;*/
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:12px;
+}

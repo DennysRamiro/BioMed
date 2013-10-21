@@ -1,0 +1,33 @@
+<div id="formulario_serie_dialog" title="Serie Producto" style="display:none; width: 300px;" >
+ <!--form name="form2" method="post" action="alm_gest_imp_grab.php" onSubmit="return ValidaCamposAltaContrato(this)"-->
+         <table id="tabla_serie" align="center" BORDER="0">
+          
+              <tr>
+                <td align="right"><strong>C&oacute;digo Proyecto :</strong></td> 
+                     <td>
+                     <label id="label_codigos_proyectos_certp"></label><input type="hidden" value="" id="codigos_proyectos_hidden_certp" />
+                     </td>  
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Nombre Producto :</strong></td> 
+                     <td>
+                     <label id="label_codigos_proveedor_certp1"></label><input type="hidden" value="" id="codigos_proveedor_hidden_certp1" />
+                     </td>  
+                </td>
+            </tr>
+              <tr>
+               <td align="right"><strong>Serie Nro :</strong></td>
+               <td><input  class="txt_campo" name="nro_doc_cont1" id="nro_doc_cont1" cols="50" rows="2"><div id="error_nro_doc_cont"></div>
+               </td>
+            </tr>        
+           <tr>
+             <td></td>
+			 <td> <br><input class="btn_form" type="submit" name="accion" value="Grabar" onclick="new GestionImportacion().grabarFormularioContrato()"></td>
+           </tr>
+       </table>
+    <!--/form-->
+</div>
+
+
+</div>

@@ -1,0 +1,98 @@
+<div id="formulario_nuevo_orden_cabecera" title="International Purchase Order Form" style="display:none; width: 300px;" >
+        <table align="center">
+				 <!-- Fecha Orden-->
+	            <tr>
+		             <td valign="top"><strong>Date of Order :</strong></td>
+		             <td><input class="txt_campo" type="text" name="fec_ini"  id="fec_ini">
+		             	 <div id="error_fec_ini"></div>
+		             </td>
+		        </tr>
+				   <!-- Fecha Entrega Orden-->
+	            <tr>
+		             <td valign="top"><strong>Deliverry Date Request :</strong></td> 
+		             <td><input class="txt_campo" type="text" name="fec_ini"  id="fec_ini">
+		             	 <div id="error_fec_ini"></div>
+		             </td>
+				</tr>
+				   <!--Tipo de paga-->
+	            <tr> 
+	                  <td valign="top"><strong>Payment Terms :</strong></td>
+	                  <td>{tipo_paga}</td>
+	            </tr>
+
+	               <!--Guia de transporte-->
+	             <tr>
+		             <td valign="top"><strong>Ship Via :</strong></td>
+
+		             <td>
+	                  	<input class="txt_campo" type="text" name="ship_orden" maxlength="60" size="40" id="ship_orden">
+	                    <div id="error_ship_orden"></div>
+	                  </td>
+				</tr>
+
+				 <!--Broker-->
+	             <tr>
+		             <td valign="top"><strong>Broker :</strong></td>
+		  
+		            <td>
+	                  	<input class="txt_campo" type="text" name="broker_orden" maxlength="60" size="40" id="broker_orden">
+	                    <div id="error_broker_orden"></div>
+	                  </td>
+				</tr>
+
+				 <!--Terms-->
+	             <tr>
+		             <td valign="top"><strong>TERMS :</strong></td>
+		  
+		             <td>{tipo_paga}</td>
+		           
+				</tr>
+
+				 <!--Broker-->
+	             <tr>
+		             <td valign="top"><strong>Broker :</strong></td>
+		  
+		            <td>
+	                  	<input class="txt_campo" type="text" name="broker_orden" maxlength="60" size="40" id="broker_orden">
+	                    <div id="error_broker_orden"></div>
+	                  </td>
+				</tr>
+
+				 <!--Descuento-->
+	             <tr>
+		             <td valign="top"><strong>Discount :</strong></td>
+		  
+		            <td>
+	                  	<input class="txt_campo" type="number" name="desc_orden" maxlength="60" size="40" id="desc_orden">
+	                    <div id="error_desc_orden"></div>
+	                  </td>
+				</tr>
+
+				 <!--Seguro-->
+	             <tr>
+		             <td valign="top"><strong>Insurance :</strong></td>
+		  
+		            <td>
+	                  	<input class="txt_campo" type="number" name="seg_orden" maxlength="60" size="40" id="seg_orden">
+	                    <div id="error_seg_orden"></div>
+	                  </td>
+				</tr>
+
+				 <!--Flete Transporte-->
+	             <tr>
+		             <td valign="top"><strong>Airfreight :</strong></td>
+		  
+		            <td>
+	                  	<input class="txt_campo" type="text" name="trans_orden" maxlength="60" size="40" id="trans_orden">
+	                    <div id="error_trans_orden"></div>
+	                  </td>
+				</tr>
+
+				<!--Boton Grabar Orden-->
+				<tr>
+		             <td></td>
+					 <td><br><input class="btn_form" type="botton" name="accion" value="Grabar Orden de Compra" onclick="new GestionImportacion().grabarOrdenCompra()"></td>
+				</tr>
+        </table>
+</div>
+

@@ -1,0 +1,40 @@
+<div id="tpl_alm_form_nuevo_ingreso_det" style="display:none;" title="Nuevo Ingreso Detalle">
+	<h3><img src="../img/alm_ing_32x32.png" align="absmiddle"> NUEVO ITEM </h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_nuevo_ingreso_det">
+
+  <table border="0">
+  
+    </tr>
+      <tr>
+         <td><label for="textfield4">PRODUCTO:</label></td>
+        <td><input type="text" name="alm_det_desc" id="alm_det_desc" class="txt_campo"><input type="hidden" value="" name="cod_unico_producto" id="cod_unico_producto" /><input type="hidden" value="" name="codigo_cab_unico_ing_egr" id="codigo_cab_unico_ing_egr"><input type="hidden" value="" name="resto_ref" id="resto_ref" /><div id="div_error_descp"></div></td>
+
+        
+    <td><label for="textfield3">CANTIDAD:</label></td>
+        <td><input type="text" name="alm_det_cantidad" id="alm_det_cantidad" class="txt_campo" value="1"><div id="div_error_cantidad"></div></td>   
+      </tr>
+      <tr>
+        <td>CODIGO INT:</td>
+        <td><input type="text" name="alm_det_cod_int" id="alm_det_cod_int" class="txt_campo" readonly="readonly"><div id="div_error_cod_int"></div></td>
+
+
+
+        <td><label for="textfield2">REFERENCIA:</label></td>
+        <td><input type="text" name="alm_det_ref" id="alm_det_ref" class="txt_campo"><input type="hidden" name="alm_det_unico_cab" id="alm_det_unico_cab" class="txt_campo"><div id="div_error_ref"></div></td>
+
+
+      <tr>
+
+       <td><label for="textfield5">UNIDAD:</label></td>
+        <td><input type="text" name="alm_det_piezas" id="alm_det_piezas" class="txt_campo"><input type="hidden" name="alm_det_piezas_cod" id="alm_det_piezas_cod" class="txt_campo"><div id="div_error_unidad"></div></td>
+        
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+  </table>
+  
+        <br>
+        <center><input type="submit" value="NUEVO INGRESO" id="bt_submit_alm_nuevo_ingreso_det" class="btn_form"><input type="button" value="CANCELAR" id="btn_cancelar_save_Item" class="btn_form" onclick="new Index().cancelaItemsDetalle()"></center>
+	</form>
+</div>

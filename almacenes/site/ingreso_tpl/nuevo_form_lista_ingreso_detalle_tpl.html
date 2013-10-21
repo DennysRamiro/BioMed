@@ -1,0 +1,51 @@
+<div id="tpl_alm_form_listar_ingreso_detalle" style="display:none;" title="Editar Ingreso Almacenes">
+	<h3><img src="../img/alm_ing_32x32.png" align="absmiddle">NUEVO INGRESO</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_listar_ingreso_cab">
+
+
+<table  border="0" id="tb_cab_list">
+  <tr>
+    <td colspan="2" rowspan="2" align="center" valign="middle"><img src="../img/logo.png" align="absmiddle" width="235" height="45"></td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"></td>
+    <td><h2><label for="numero_unico" id="nro_nota">NRO:</label><input type="text" name="nro_nota_elist" id="nro_nota_elist" class="txt_campo" readonly="readonly"></h2></td>
+  </tr>
+
+  <tr>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td colspan="3"><h2>NOTA DE ENTREGA</h2></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td ><label for="textfield">NOMBRE :</label></td>
+    <td >{nombre_almacenero}</td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td><label for="textfield">FECHA :</label></td>
+    <td><input type="text" name="alm_fec_ing_list" id="alm_fec_ing_list" class="txt_campo"><div id="div_error_fecha"></td>
+  </tr>
+  <tr>
+    <td><label for="textfield">MOTIVO :</label></td>
+    <td>{tipo_motivo}<div id="div_error_motivo"></select></td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td><label for="textfield">DESTINO :</label></td>
+    <td>{destino}<div id="div_error_destino"></select></td>
+  </tr>
+</table>
+<p>
+ <input type="button" value="INGRESAR ITEM" id="btn_items_det_list" class="btn_form" >
+  <br>
+<table border="0" id="tb_list_det" class="table_usuario">
+  
+</table>
+       
+	</form>
+</div>

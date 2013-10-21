@@ -1,0 +1,58 @@
+<div id="tpl_alm_form_reporte_egreso_detalle" style="display:none;" title="Nuevo Egreso Almacenes">
+	<h3><img src="../img/alm_egr_32x32.png" align="absmiddle"> Registrar Nuevo Egreso</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_mdificar_egreso_cab">
+    <table  border="0" id="tb_cab_mod" align="center">
+      <tr>
+        <td colspan="2" rowspan="2" align="center" valign="middle"><img src="../img/logo.png" align="absmiddle" width="235" height="45"></td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+        <td><h2><label for="numero_unico" id="nro_nota">NRO:</label><input type="text" name="nro_nota_egr_edit" id="nro_nota_egr_edit" class="txt_campo" readonly="readonly"></h2></td>
+      </tr>
+      <tr>
+        <td colspan="6"><h2><center>NOTA DE SALIDA</center></center></h2></td>
+      </tr>
+      <tr>
+        <td ><label for="textfield"><strong>NOMBRE :</strong></label></td>
+        <td ><input type="text" name="alm_nom_egre_edit" id="alm_nom_egre_edit" class="txt_campo">
+             <input type="hidden" name="alm_unico_egre_edit" id="alm_unico_egre_edit" class="txt_campo">
+             <input type="hidden" name="alm_motivo_egre_edit_01" id="alm_motivo_egre_edit_01" class="txt_campo"><div id="div_error_nombre"></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td><label for="textfield"><strong>FECHA :</strong></label></td>
+        <td><input type="text" name="alm_fec_egre_edit" id="alm_fec_egre_edit" class="txt_campo"><div id="div_error_fecha"></td>
+      </tr>
+      <tr>
+        <td><label for="textfield"><strong>ORIGEN :</strong></label></td>
+        <td>{origen}<div id="div_error_motivo"></select></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td><label for="textfield"><strong>DESTINO :</strong></label></td>
+        <td>{destino}<div id="div_error_destino"></select></td>
+      </tr>
+      
+    </table>
+        <br>
+        <hr style="border:1px dashed;">
+        <div id="btn_acciones">
+          
+        </div>
+      <table border="0" id="tb_item_det_egreso" >
+        
+      </table>
+        
+      <table border="0" id="tb_mod_det_egreso" class="table_usuario">
+        
+      </table>
+
+       <table border="0" id="tb_procesar_nota_egreso" class="table_usuario">
+        
+      </table>
+       
+	</form>
+</div>

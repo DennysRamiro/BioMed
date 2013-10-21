@@ -1,0 +1,171 @@
+<div id="formulario_nuevo_orden_detalle0001" title="International Purchase Order Form" style="display:none; width: 300px;" >
+  <div align="center"><img src="../img/logo.png" width="250"></div>
+    <h2>Detalle Orden Compra</h2>
+  <hr style="border:1px dashed;">
+			<table>
+            	<tr><td valign="top">
+                	<table align="center" class="table_usuario">
+                        <tr> 
+                              <th valign="top"><strong>Codigo Proyecto :</strong></th>
+                              <td align="center"> <input type="txt" id="codigo_proyecto" readonly>
+                                        <input type="hidden" id="codigo_unico_proyecto_hidden">
+                              </td>
+                        </tr>
+                        <!-- Nro Orden-->
+                        <tr> 
+                              <th valign="top"><strong>Purchase Orden Number :</strong></th>
+                              <td align="center"> <input type="txt" id="nro_orden_compra"></td>
+                        </tr>
+                        <!-- Fecha Orden-->
+                        <tr>
+                             <th valign="top"><strong>Date of Order :</strong></th>
+                             <td align="center"> <input type="txt" id="fecha_orden"></td>
+                        </tr>
+                        
+                        <!-- Fecha Entrega Orden-->
+                        <tr>
+                             <th valign="top"><strong>Deliverry Date Request :</strong></th> 
+                             <td align="center"> <input type="txt" id="fecha_entrega_orden"></td>
+                             
+                        </tr>
+                        <!--Tipo de paga-->
+                        <tr> 
+                              <th valign="top"><strong>Payment Terms :</strong></th>
+                              <td align="center"><input type="txt" id="terminos_pago"></td>
+                        </tr>
+                        <!--Guia de transporte-->
+                         <tr>
+                             <th valign="top"><strong>Ship Via :</strong></th>
+                             <td align="center"><input type="txt" id="metodo_envio"></td>
+                         
+                        </tr>
+                        <!--Broker-->
+                        <tr>
+                             <th valign="top"><strong>Broker :</strong></th>
+                             <td align="center"><input type="txt" id="nombre_broker"></td>
+                        </tr>
+                        <!--Terminos-->
+                         <tr>
+                             <th valign="top"><strong>Terms :</strong></th>
+                             <td align="center"><input type="txt" id="terminos_envio"></td>
+                        </tr>
+        
+                    </table>
+                </td><td valign="top">
+                		<table class="table_usuario">
+                         <!-- Nombre Contacto-->
+                            <tr> 
+                                  <th valign="top"><strong>Contact Name :</strong></th>
+                                  <td align="center"><label id="ref_nombre_tipo2"></label></td>
+                            </tr>
+                         <!-- Telefono Contacto-->
+                             <tr> 
+                                  <th valign="top"><strong>Telephone Num :</strong></th>
+                                  <td align="center"><label id="ref_telefono_tipo2" ></label></td>
+                            </tr>
+                         <!-- Fax Contacto-->
+                             <tr> 
+                                  <th valign="top"><strong>Fax Number :</strong></th>
+                                  <td align="center"> <label id="ref_fax_numero_tipo2"></label></td>
+                            </tr>
+            
+                         <!--Email-->
+                             <tr>
+                                 <th valign="top"><strong>Email Address :</strong></th>
+                                 <td align="center"> <label id="ref_email_tipo2"></label></td>
+                            </tr>
+                        </table>
+                </td></tr>
+            </table>
+     		<table>
+            	<tr><td valign="top">
+                    <table class="table_usuario">
+                     <!--Nombre cuenta y Nombre guia-->
+                        <tr> 
+                              <th valign="top"><strong>Name of Account</strong></th><th valign="top"><strong>Ship to Name</strong></th>
+                        </tr>
+        
+                        <tr>
+                              <td align="center"> <label id="ref_name_tipo1"></label></td><td align="center"> <label id="ref_name_tipo11"></label></td>
+                        </tr>
+        
+                         <!--Direccion empresa y direccion entrega-->
+                        <tr>
+                              <th valign="top"><strong>Bill to Address</strong></th><th valign="top"><strong>Ship to Address </strong></th>
+                        </tr>
+        
+                        <tr>
+                              <td align="center"> <label id="ref_direccion_tipo1"></label></td><td align="center"> <label id="ref_direccion_tipo11"></label></td>
+                        </tr>
+                        <tr>
+                              <td align="center"> <label id="ref_telefono_tipo1" ></label></td><td align="center"> <label id="ref_telefono_tipo11" ></label></td>
+                        </tr>
+                        <tr>
+                              <td align="center"> <label id="ref_fax_tipo1" ></label></td><td align="center"> <label id="ref_fax_tipo11" ></label></td>
+                        </tr>
+                         <tr>
+                              <td align="center"> <label id="ref_ciudad_tipo1" ></label></td><td align="center"> <label id="ref_ciudad_tipo11" ></label></td>
+                        </tr>          
+                    </table>
+                </td><td valign="top">
+                    <table class="table_usuario">
+                        <!--Nro de proforma Correspondiente-->
+                             <tr> 
+                                  <th valign="top"><strong>Proforma Invoice :</strong></th>
+                                  <td> <input type="text" id="nro_proforma_orden_compra" readonly ></td>
+                            </tr>
+                        <!--Fecha de proforma Correspondiente-->
+                             <tr> 
+                                  <th valign="top"><strong>Date :</strong></th>
+                                  <td> <input type="text" id="fecha_proforma_orden_compra" readonly></td>
+                            </tr>
+                            <tr>
+                                <th valign="top"><strong>Proveedor</strong></th>
+                                <td> <input type="text" id="nombre_proveedor_orden_compra" readonly></td>
+                            </tr>
+                     </table>
+                     <br>
+                     
+                </td></tr>
+            </table>
+            <br>
+          <h2>Items de al Orden de Compra</h2>
+          <hr style="border:1px dashed;">
+            <input type="button"  value="Nuevo Item" class="btn_form" onclick="new GestionImportacion().nuevoItemOrdenCompra()">
+            <div id="lista_items_orden_compra00001">    
+    			<table  class="table_usuario">
+            			<tr>
+            			   <th valign="top"><strong>ITEM </strong></th>
+            			   <th valign="top"><strong>PART NUMBER </strong></th>
+            			   <th valign="top"><strong>DESCRIPTION </strong></th>
+            			   <th valign="top"><strong>QTY </strong></th>
+            			   <th valign="top"><strong>UM </strong></th>
+            			   <th valign="top"><strong>UNIT PRICE</strong></th>
+            			</tr>
+
+            			<tr>
+            			   <td></td>
+            			   <td></td>
+            			   <td></td>
+            			   <td></td>
+            			   <td></td>
+            			   <td></td>
+            			</tr>
+    			</table>
+            </div>
+            <br>
+            <table class="table_usuario">
+            	<tr>
+                    <th valign="top"><strong>Discount :</strong></th><td> <input type="text" id="discount_orden_compra" readonly></td> </tr>
+  			  	<tr>
+                      <th valign="top"><strong>Insurance :</strong></th><td> <input type="text" id="insurance_orden_compra" readonly></td> </tr>
+  			   	<tr>
+                      <th valign="top"><strong>Airfreight :</strong></th><td> <input type="text" id="airfreight_orden_compra" readonly></td></tr>
+  			   	<tr>
+                      <th valign="top"><strong>Total :</strong></th><td> <input type="text" id="total_orden_compra" readonly></td>
+              </tr>
+            </table>
+    <!--  /form -->
+    <br>
+          <center><a href="#" onclick="new OrdenCompra().cerrarVentanaOrdenComrpa()" class="btn_form"> Aceptar </a></center>
+</div>

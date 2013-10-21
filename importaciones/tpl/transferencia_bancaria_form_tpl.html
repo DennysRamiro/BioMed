@@ -1,0 +1,75 @@
+
+<div id="formulario_nuevo_transferencia_bancaria" title="Transferencia Bancaria" style="display:none; width: 300px;" >
+         <table align="center" BORDER="0">
+              
+            <tr>
+                <td><strong>C&oacute;digo Proyecto :</strong></td> 
+                     <td>
+                     <label id="label_codigos_proyectos_trans"></label><input type="hidden" value="" id="codigos_proyectos_hidden" />
+                     </td>  
+                </td>
+            </tr>   
+                 <tr>
+                <td><strong>Nombre de la Orden:</strong></td> 
+                     <td>
+                     <label id="label_codigos_Orden_trans"></label><input type="hidden" value="" id="codigos_ordenes_hidden" /><input type="hidden" value="" id="numero_unico_Orden" readonly/>
+                     </td>  
+                </td>
+            </tr>  
+            
+              <tr>
+                <td><strong>Cuenta de Banco :</strong></td> 
+                     <!--td>{cuenta_banco}</td-->  
+                     <td>
+                     <input class="txt_campo"  type="text" name="cta_bnco" id="cta_bnco" value="" readonly/>
+                     </td>  
+                </td>
+            </tr>     
+             <tr>
+             <td ><strong>N&uacute;mero de Documento :</strong></td> 
+               <td><input class="txt_campo" type="text" name="numero_doc_trans_banc" maxlength="60" id="numero_doc_trans_banc">
+                   <div id="error_numero_doc_trans_banc"></div>
+             </td>
+            </tr> 
+               
+           <tr>
+             <td ><strong>Fecha Documento :</strong></td> 
+               <td><input class="txt_campo" type="text" name="fec_trans_banc" maxlength="60" id="fec_trans_banc">
+                   <div id="error_fec_trans_banc"></div>
+             </td>
+            </tr>
+			<tr>
+             <td ><strong>Monto de la Transferencia :</strong></td> 
+               <td><input class="txt_campo" type="text" name="monto_trans_banc" maxlength="60" id="monto_trans_banc">
+                   <div id="error_monto_trans_banc"></div>
+             </td>
+            </tr>
+
+            <tr>
+             <td ><strong>Comision de la Transferencia :</strong></td> 
+               <td><input class="txt_campo" type="text" name="comis_trans_banc" maxlength="60" id="comis_trans_banc">
+                   <div id="error_comis_trans_banc"></div>
+             </td>
+            </tr>
+           
+             <tr>
+             <td ><strong>Observaciones :</strong></td>
+               <td><textarea  name="obs_trans_banc" id="obs_trans_banc" cols="50" rows="2"></textarea>            
+                   <div id="error_obs_trans_banc"></div>
+               </td>
+            </tr>
+              
+           <tr>
+             <td></td>
+			 <td> <br><input class="btn_form" type="submit" name="accion" value="Grabar" onclick="new GestionImportacion().grabarFormularioTransferenciaBancaria()"></td>
+           </tr>
+       </table>
+    <!--/form-->
+    
+    
+    
+   
+    
+    
+    
+</div>

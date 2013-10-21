@@ -1,0 +1,62 @@
+<div id="tpl_vent_form_nuevo_item_cabecera" style="display:none;" title="Nuevo Item">
+	<h3><img src="../img/stuff_32x32.png" align="absmiddle"> NUEVO ITEM</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_vent_nuevo_item_cabecera_formulario">
+    <input type="hidden" id="id_cab_prof_venta_codigo_unico" name="id_cab_prof_venta_codigo_unico">
+		<table>
+          <tr>
+            <td>PROVEEDOR:</td>
+            <td><div id="div_vent_proveedor_vent"></div><input type="hidden" name="id_codigo_proveedor" id="id_codigo_proveedor"></td>
+            <td>ITEM:</td>
+            <td><div id="div_vent_codigo_unico_producto_item"></div><input name="txt_vent_codigo_unico" id="txt_vent_codigo_unico" type="hidden" class="txt_campo" /><input type="hidden" name="id_codigo_cabecera_prof_venta_prod" value="id_codigo_cabecera_prof_venta_prod"></td>
+          </tr>
+          <tr>
+            <td>ESTADO PRODUCTO:</td>
+            <td><div id="div_vent_estado_producto_dispo"></div></td>
+            <td>TIPO PRODUCTO:</td>
+            <td><div id="div_vent_estado_tipo_producto"></div><input type="hidden" name="id_codigo_tipo_prod" id="id_codigo_tipo_prod" ></td>
+          </tr>
+          <tr>
+            <td>CANTIDAD:</td>
+            <td><input name="txt_vent_item_cant_prod" id="txt_vent_item_cant_prod" type="text" class="txt_campo"/><div id="div_error_item_cant_prod"></div></td>
+            <td>P. VENTA MIN:</td>
+            <td><input type="text" readonly="" id="div_vent_precio_vent_min" name="div_vent_precio_vent_min" class="txt_campo"></td>
+          </tr>
+          <tr>
+            <td>P. VENTA MAX:</td>
+            <td><input type="text" readonly="" id="div_vent_precio_vent_max" name="div_vent_precio_vent_max" class="txt_campo"></td>
+            <td>P. VENTA:</td>
+            <td><input name="txt_vent_precio_venta_form_item" id="txt_vent_precio_venta_form_item" type="text" class="txt_campo"/><div id="div_error_vent_precio_venta"></div> <input type="hidden" name="id_codigo_tipo_moneda" id="id_codigo_tipo_moneda" ></td>
+          </tr>
+          <tr>
+            <td>MARCA:</td>
+            <td><div id="div_marca_prod_form_item"></div><input type="hidden" name="id_marca_prod_item" id="id_marca_prod_item"> </td>
+            <td>ORIGEN:</td>
+            <td><div id="div_sucursal_origen_form_item"></div><input type="hidden" name="id_sucursal_origen_item" id="id_sucursal_origen_item"></div></td>
+          </tr>
+          <tr>
+            <td>TIEMPO ESPERA:</td>
+            <td><input name="txt_vent_tiempo_espera" id="txt_vent_tiempo_espera" type="text" class="txt_campo" placeholder="Dias"/><div id="div_error_vent_tiempo_espera"></div></td>
+            <td>SERVICIOS:</td>
+            <td><select id="select_vent_servicio_producto_item" name="select_vent_servicio_producto_item"></select><input type="text" name="input_vent_porcentaje_por_servicio" id="input_vent_porcentaje_por_servicio" class="txt_campo"></td>
+          </tr>
+          <tr>
+            <td>ESP. TECNICA:</td>
+            <td><textarea name="txt_area_vent_especificacion_tecnica" id="txt_area_vent_especificacion_tecnica"></textarea></td>
+            <td>CONF. DESEADA:</td>
+            <td><textarea name="txt_area_vent_conf_deseada" id="txt_area_vent_conf_deseada"></textarea></td>
+          </tr>
+           <tr>
+            <td>DET. ACCESSORIOS:</td>
+            <td><textarea name="txt_area_vent_detalle_accesorios" id="txt_area_vent_detalle_accesorios"></textarea></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <br>
+        <center>
+          <input type="submit" value="PROCESAR NUEVO ITEM" class="btn_form"> 
+          <input type="button" value="CANCELAR" class="btn_form" onclick="new Home().closeDialogoNuevoItemProducto();">
+        </center>
+	</form>
+</div>

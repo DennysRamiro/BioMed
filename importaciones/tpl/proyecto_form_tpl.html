@@ -1,0 +1,45 @@
+<div id="formulario_nuevo_proyecto" title="Nuevo Proyecto" style="display:none; width: 300px;" >
+     		<table align="center">
+	            <!-- Nombre Proyecto-->
+	            <tr> 
+	                  <td valign="top"><strong>Nombre Proyecto :</strong></td>
+	                  <td>
+	                  	<input class="txt_campo" type="text" name="nombre_proyecto" maxlength="60" size="40" id="nombre_proyecto">
+	                    <div id="error_nombre_proy"></div>
+	                  </td>
+	            </tr>
+
+	            <!-- Tipo Proyecto-->
+	             <tr>
+                      <td valign="top"><strong>Tipo :</strong></td>
+			          <td> {proyecto_tipo}
+				     </td>  								  
+				 </tr>
+				 <tr>
+		             <td valign="top"><strong>Fecha Inicio :</strong></td> 
+		             <td><input class="txt_campo" type="text" name="fec_ini"  id="fec_ini">
+		             <div id="error_fec_ini"></div>
+		             </td>
+				 </tr>
+
+				 <tr>
+		             <td valign="top"><strong>Fecha Fin :</strong></td>
+		             <td><input class="txt_campo" type="text" name="fec_fin"  id="fec_fin">
+		             <div id="error_fec_fin"></div>
+		             </td>
+				 </tr>
+ 
+ 				 <tr>
+		             <td valign="top"><strong>Descripci&oacute;n :</strong></td>
+		             <td><textarea  name="descripcion_proyecto" id="descripcion_proyecto" cols="50" rows="2"></textarea>            
+		             <div id="error_desc"></div>
+		             </td>
+				</tr>
+				 <tr>
+		             <td></td>
+					 <td><br><input class="btn_form" type="submit" name="accion" value="Grabar"  onclick="new GestionImportacion().grabarFormulario()"></td>
+					</tr>
+
+            </table>
+    <!--  /form -->
+</div>

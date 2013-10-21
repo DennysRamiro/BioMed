@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+var cab1 = '<table border="0" align="center"><tr><td colspan="7" align="center"><h1>LISTA DE PRODUCTOS INGRESADOS</h1></td></tr>';
+						//cab1 = cab1 + '<tr><td colspan="2"></td><td >&nbsp;</td><td >&nbsp;</td><td >&nbsp;</td><td >&nbsp;</td><td >&nbsp;</td></tr><tr><td colspan="2"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>';
+					
+						cab1 = cab1 + '<tr><td ><label for="textfield">Codigo Referencia:</label></td>';
+						cab1 = cab1 + '<td ><input type="text" class="txt_campo" name="cod_ref_m" id="cod_ref_m" value="'+res[0].alm_prod_cab_cod_ref+'" readonly><input type="hidden" class="txt_campo" name="cod_prod_m" id="cod_prod_m" value="'+res[0].alm_prod_cab_codigo+'" readonly></td>';
+						cab1 = cab1 + '<td>&nbsp;</td>';
+						cab1 = cab1 + '<td>Fecha Proceso:</td><td><input type="text" class="txt_campo" name="fec_proc_m" id="fec_proc_m" readonly value="'+res[0].alm_prod_cab_fecha_proceso+'" /></td><td align="center">Imagen</td>';
+						cab1 = cab1+ '<td align="center">Documento</td></tr>';
+						cab1 = cab1 + '<tr><td><label for="textfield">Tipo Producto:</label></td>';
+						cab1 = cab1 + ' <td><input type="text" class="txt_campo" name="tipo_m" id="tipo_m" value="'+res[0].tipo+'" readonly></td>';
+						cab1 = cab1 + '<td>&nbsp;</td>';
+						cab1 = cab1 + '<td>Unidad Medida:</td><td><input type="text" class="txt_campo" name="unidad_m" id="unidad_m" value="'+res[0].unidad+'" readonly /></td><td rowspan="5"><img style="border: solid 1px #ccc;" width="100" height="100" src=".//'+res[0].alm_prod_cab_img+'"></td>';
+						cab1 = cab1 + '<td rowspan="5"><a href="clases/pdf.php?valor=.//'+res[0].alm_prod_cab_pdf_descp+'" target="_blanc"><img style="border: solid 1px #ccc;" width="100" height="100" src=".//../../images/producto/dt/pdf.png"></a></td>';
+						cab1 = cab1 + '</tr><tr><td><label for="textfield">Proveedor:</label></td>';
+						cab1 = cab1 + '<td><input type="text" class="txt_campo" name="nom_prov_m" id="nom_prov_m"  value="'+res[0].proveedor+'" readonly></td>';
+						cab1 = cab1 + '<td>&nbsp;</td>';
+						cab1 = cab1 + ' <td>Moneda</td><td><input type="text" class="txt_campo" name="moneda_m" id="moneda_m" value="'+res[0].moneda+'" readonly /></td>';
+						cab1 = cab1 + '';
+						cab1 = cab1 + '</tr><tr><td><label for="textfield">Nombre</label></td>';
+						cab1 = cab1 + '<td><input type="text" class="txt_campo" name="nom_m" id="nom_m" value="'+res[0].alm_prod_cab_nombre+'" readonly></td>';
+						cab1 = cab1 + '<td>&nbsp;</td>';
+						cab1 = cab1 + '<td>Presentacion</td><td><input type="text" class="txt_campo" name="prest_m" id="prest_m" value="'+res[0].alm_prod_cab_presentacion+'" readonly /></td>';
+						cab1 = cab1 + '';
+						cab1 = cab1 + '</tr><tr><td><label for="textfield">Descripcion</label></td>';
+						cab1 = cab1 + '<td><input type="text" class="txt_campo" name="desc_m" id="desc_m" value="'+res[0].alm_prod_cab_descripcion+'" readonly></td>';
+						cab1 = cab1 + '<td>&nbsp;</td>';
+						cab1 = cab1 + '<td><!--label for="textfield">Imagen</label-->Sucursal Origen</td><td><!--input type="text" class="txt_campo" name="img_m" id="img_m" value="'+res[0].alm_prod_cab_img+'" readonly --><input type="text" class="txt_campo" name="ag_or_m" id="ag_or_m" value="'+res[0].age_orig+'" readonly /></td>';
+						cab1 = cab1 + '</tr>';
+						cab1 = cab1 + '<tr><td><label for="textfield">Cantidad :</label></td>';
+						cab1 = cab1 + '<td><input type="text" class="txt_campo" name="cant_m" id="cant_m" value="'+res[0].alm_prod_cab_cantidad_stock+'" readonly></td>';
+						cab1 = cab1 + '<td>&nbsp;</td>';
+						cab1 = cab1 + '<td><!--label for="textfield">Datos Tecnicos</label--></td><td><!--input type="text" class="txt_campo" name="dat_tec_m" id="dat_tec_m" value="'+res[0].alm_prod_cab_pdf_descp+'" readonly--></td>';
+						cab1 = cab1 + '</tr>';
+						cab1 = cab1 + '<tr><td colspan="2" align="center"></td>';
+						cab1 = cab1 + '<td>&nbsp;</td>';
+						cab1 = cab1 + '<td colspan="4" align="center"></td>';
+						cab1 = cab1 + '</tr></table><br> <input type="button" name="btn_prod" id="btn_prod" class="btn_form" value="Nuevo Item" onclick="new Productos().ingresarDetalleProductos(\''+codigo+'\',\''+res[0].proveedor+'\');">';
+
+</body>
+</html>

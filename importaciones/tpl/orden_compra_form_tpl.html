@@ -1,0 +1,41 @@
+<div id="form_02_nueva_orden_compra_form_0002" title="Nueva Orden Compra" style="display:none;">
+	<h2>Formulario Nueva Orden Compra</h2>
+	<hr style="border:1px dashed;">
+	<div id="formulario_nueva_orden_compra_tpl_00001">
+			<table > 
+				<tr> 
+					<td><font color="red"><strong>Orden de Ref :</strong></font></td><td><input type="number" class="txt_campo" id="camp_01_orden_referencia_orden_compra"><div id="err_01_error_orden_ref"></div></td>
+					<td><font color="red"><strong>Codigo de Proforma :</strong></font></td><td><input  class="txt_campo" id="camp_02_nro_doc_proforma_orden_compra"><div id="camp_02_error_nro_doc_proforma"></div></td>
+			    </tr>
+			    <tr>
+			    	<td><font color="red"><strong>Proveedor :</strong></font></td><td>{lista_proveedor}</td>
+			    	<td><font color="red"><strong>Fecha Proforma:</strong></font></td><td><input class="txt_campo" type="text"  id="camp_03_fec_doc_proforma_orden_compra" readonly></td>
+			    </tr>
+			    <tr>
+			    	<td><font color="red"><strong>Fecha Orden :</strong></font></td><td><input class="txt_campo" type="text"  id="camp_04_fec_orden_cabecera_orden_compra" readonly></td>
+			    	<td><font color="red"><strong>Fecha Entrega:</strong></font></td><td><input class="txt_campo" type="text"  id="camp_05_fec_entrega_orden_compra" readonly></td>
+			   	</tr>
+			   	<tr>
+			   		<td><font color="red"><strong>Terminos de Pago:</strong></font></td><td>{terminos_pago}</td>
+			   		<td><strong>Metodo Envio:</strong></td><td><input class="txt_campo" type="text"  id="metodo_envio_orden_compra"><div id="error_metodo_envio"></div></td>
+			   	</tr>
+			   	<tr>
+			   		<td><strong>Broker:</strong></td><td><input class="txt_campo" type="text"  id="broker_orden"><div id="error_broker_orden"></div></td>
+			   		<td><font color="red"><strong>Terminos de Orden:</strong></font></td><td>{terminos_orden}</td>
+			   	</tr>
+			   	<tr>
+			   		<td><font color="red"><strong>Moneda :</strong></font></td><td>{moneda_orden_compra}</td>
+			   		<td><strong>Observaciones :</strong></td><td><textarea   id="obs_orden_compra" ></textarea><div id="error_obs_prforma"></div></td>
+			   	</tr>
+			   	<tr>
+			   		<td colspan="2"><strong>Descuentos Adiciones a la Orden :</strong><input type="checkbox" id="check_costos_adicionales_orden_compra" name="check_costos_adicionales_orden_compra"></td>
+			   		<td></td><td></td>
+			   	</tr>
+			</table>
+			<div id="descuentos_adicionales_orden_compra_000001">
+
+			</div>
+			<center><input class="btn_form" type="submit" name="accion" value="Grabar Orden Compra" onclick="new OrdenCompra().grabarNuevaOrdenCompra()"></center>
+	</div>
+
+</div>

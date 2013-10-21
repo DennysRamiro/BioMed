@@ -1,0 +1,52 @@
+<div id="tpl_vent_form_nuevo_cliente" style="display:none;" title="Nuevo Cliente">
+	<h3><img src="../img/user office_32x32.png" align="absmiddle"> Registrar Nuevo Cliente</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_vent_nuevo_cliente">
+		<table>
+          <tr>
+            <td>Nombre(s):</td>
+            <td><input name="txt_vent_nombre_cliente" id="txt_vent_nombre_cliente" type="text" class="txt_campo" /><div id="div_error_vent_error_nombre"></div></td>
+            <td>Empresa:</td>
+            <td><input name="txt_vent_empresa_cliente" id="txt_vent_empresa_cliente" type="text" class="txt_campo" /></td>
+          </tr>
+          <tr>
+            <td>Apellido Paterno:</td>
+            <td><input name="txt_vent_apellido_pat_cliente" id="txt_vent_apellido_pat_cliente" type="text" class="txt_campo"/><div id="div_error_vent_error_apellido_pat"></div></td>
+            <td>Cargo:</td>
+            <td><input name="txt_vent_cargo_cliente" id="txt_vent_cargo_cliente" type="text" class="txt_campo"/></td>
+          </tr>
+          <tr>
+            <td>Apellido Materno:</td>
+            <td><input name="txt_vent_apellido_mat_cliente" id="txt_vent_apellido_mat_cliente" type="text" class="txt_campo"/></td>
+            <td>Departamento</td>
+            <td><input name="txt_vent_departamento_cliente" id="txt_vent_departamento_cliente" type="text" class="txt_campo"/></td>
+          </tr>
+          <tr>
+            <td>Correo:</td>
+            <td><input name="txt_vent_cliente_correo" id="txt_vent_cliente_correo" type="text" class="txt_campo"/><div id="div_error_vent_error_cliente_correo"></div></td>
+            <td>Telefono:</td>
+            <td><input name="txt_vent_telefono_cliente" id="txt_vent_telefono_cliente" type="text" class="txt_campo"/><div id="div_error_vent_error_telefono_cliente"></div></td>
+          </tr>
+          <tr>
+            <td>Celular:</td>
+            <td><input name="txt_vent_celular_cliente" id="txt_vent_celular_cliente" type="text" class="txt_campo"/><div id="div_error_vent_error_celular_cliente"></div></td>
+            <td>NIT:</td>
+            <td><input name="txt_vent_nit_cliente" id="txt_vent_nit_cliente" type="text" class="txt_campo"/><div id="div_error_vent_error_nit_cliente"></div></td>
+          </tr>
+          <tr>
+            <td>Direcci&oacute;n:</td>
+            <td><textarea name="txt_area_vent_dirrecion_cliente" id="txt_area_vent_dirrecion_cliente"></textarea></td>
+            <td>Razon Social:</td>
+            <td><input name="txt_vent_razon_social_cliente" type="text" id="txt_vent_razon_social_cliente" class="txt_campo"/><div id="div_error_vent_error_razon_social_cliente"></div></td>
+          </tr>
+          <tr>
+            <td>Persona Contactar:</td>
+            <td><input name="txt_vent_cliente_persona_contacto" type="text" id="txt_vent_cliente_persona_contacto" class="txt_campo"/><div id="div_error_vent_error_persona_contacto"></div></td>
+            <td>N&uacute;mero Interno:</td>
+            <td><input name="txt_vent_numero_interno" id="txt_vent_numero_interno" type="text" class="txt_campo"/><div id="div_error_vent_error_numero_interno"></td>
+          </tr>
+        </table>
+        <br>
+        <center><input type="submit" value="Registrar Nuevo cliente" id="bt_submit_vent_nuevo_cliente" class="btn_form"> <input type="button" value="Cancelar" class="btn_form" onclick="new Cliente().closeDialogoNuevoCliente();"></center>
+	</form>
+</div>

@@ -1,0 +1,47 @@
+<div id="tpl_vent_form_nuevo_cotizacion_publ" style="display:none;" title="Nuevo Cotizacion Publica">
+  <h3><img src="../img/cotizacion_publ_32x32.png" align="absmiddle"> NUEVA COTIZACION PUBLICA</h3>
+  <hr style="border:1px dashed;">
+  <form id="form_vent_nueva_cotizacion_publ">
+    <table>
+		<tr>
+	    	 <td><strong>CLIENTE:</strong></td>
+	            <td><input name="txt_vent_cliente_proforma_publ" id="txt_vent_cliente_proforma_publ" type="text" class="txt_campo" />
+	            	<input type="hidden" value="" name="cod_unico_cliente_publ" id="cod_unico_cliente_publ" />
+	            	<div id="div_error_txt_vent_cliente_proforma_publ"></div></td>
+	            	<td><a class="btn_ventas" onclick="new Home().nuevoClienteBotonPubl()"> <img src="../img/user office add_32x32.png" align="absmiddle"></a></td>
+	            <!--td>{cod_cliente}<div id="div_error_txt_vent_cliente_proforma"></div></td-->
+		</tr>
+
+		<tr>
+	    	 <td><strong>CODIGO CLIENTE:</strong></td>
+	            <td><input name="txt_vent_cod_cliente_proforma_publ" id="txt_vent_cod_cliente_proforma_publ" type="text" class="txt_campo"  readonly /><div id="div_error_txt_vent_cod_cliente_proforma_publ"></div></td>
+	            <!--td>{cod_cliente}<div id="div_error_txt_vent_cliente_proforma"></div></td-->
+		</tr>
+
+		<tr>
+	    	 <td><strong>COTIZADO A NOMBRE:</strong></td>
+	            <td><input name="txt_vent_cotizador_proforma_publ" id="txt_vent_cotizador_proforma_publ" type="text" class="txt_campo" />
+	            	<div id="div_error_txt_vent_cotizador_proforma_publ"></div></td>
+	            <!--td>{cod_cliente}<div id="div_error_txt_vent_cliente_proforma"></div></td-->
+		</tr>
+		 <tr>
+	    	 <td><strong>FECHA INICIO:</strong></td>
+	            <td><input name="txt_vent_fch_inc_proforma_publ" id="txt_vent_fch_inc_proforma_publ" type="text" class="txt_campo" /><div id="div_error_txt_vent_fch_inc_proforma_publ"></div></td>
+		</tr>
+		 <tr>
+	    	 <td><strong>FECHA ENTREGA:</strong></td>
+	            <td><input name="txt_vent_fch_entr_proforma_publ" id="txt_vent_fch_entr_proforma_publ" type="text" class="txt_campo" /><div id="div_error_txt_vent_fch_entr_proforma_publ"></div></td>
+		</tr>
+		<tr>
+	    	 <td><strong>TIPO DE COMPRA:</strong></td>
+	            <td>{tipo_compra}<div id="div_error_txt_vent_tcomp_proforma_publ"></div></td>
+		</tr>
+		<tr>
+	    	 <td><strong>FORMA DE PAGO:</strong></td>
+	            <td>{form_pago}<div id="div_error_txt_vent_fpago_proforma_publ"></div></td>
+		</tr>
+        </table>
+        <br>
+        <center><input type="submit" value="Registrar Nueva Cotizacion" id="bt_submit_vent_nueva_cotizacion_publ" class="btn_form"></center>
+  </form>
+</div>

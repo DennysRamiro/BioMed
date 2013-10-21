@@ -1,0 +1,37 @@
+<div id="tpl_alm_form_nuevo_ingreso" style="display:none;" title="Nuevo Ingreso Almacenes">
+	<h3><img src="../img/alm_ing_32x32.png" align="absmiddle">NUEVO INGRESO</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_nuevo_ingreso">
+
+
+  <table  border="0">
+  <tr>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td >&nbsp;</td>
+    <td><!--label for="textfield5">NRO:</label><input type="text" name="alm_nro_ing" id="alm_nro_ing" value="123456" readonly="readonly" class="txt_campo"--></td>
+  </tr>
+  <tr>
+    <td ><label for="textfield">NOMBRE:</label></td>
+    <td >{nombre_almacenero}<input type="hidden" name="alm_motivo_ing" id="alm_motivo_ing" class="txt_campo" ></td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td><label for="textfield">FECHA:</label></td>
+    <td><input type="text" name="alm_fec_ing" id="alm_fec_ing" class="txt_campo"><div id="div_error_fecha"></td>
+  </tr>
+  <tr>
+    <td><label for="textfield">ORIGEN:</label></td>
+    <td>{origen}<div id="div_error_origen"></td>
+    <td>&nbsp;</td>
+    <td></td>
+    <td><label for="textfield">DESTINO:</label></td>
+    <td>{destino}<div id="div_error_destino"></td>
+  </tr>
+  
+</table><br>
+<center><input type="submit" value="NUEVO INGRESO" id="bt_submit_alm_nuevo_ingreso" class="btn_form" ><input type="button" value="CANCELAR" id="btn_cancelar_cab_ing" class="btn_form" onclick="new Index().cancelarIngresoCab()" ></center>
+
+	</form>
+</div>

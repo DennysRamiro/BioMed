@@ -1,0 +1,41 @@
+<div id="formulario_nuevo_contrato" title="Contrato/Pedido" style="display:none; width: 300px;" >
+ <!--form name="form2" method="post" action="alm_gest_imp_grab.php" onSubmit="return ValidaCamposAltaContrato(this)"-->
+         <table align="center" BORDER="0">
+          
+              <tr>
+                <td align="right"><strong>C&oacute;digo Proyecto :</strong></td> 
+                     <td>
+                     <label id="label_codigo_proyecto"></label><input type="hidden" value="" id="codigo_proyecto_hidden" />
+                     </td>  
+                </td>
+            </tr>     
+             
+              <tr>
+               <td align="right"><strong>N&uacute;mero de Documento :</strong></td>
+               <td><input  class="txt_campo" name="nro_doc_cont" id="nro_doc_cont" cols="50" rows="2"><div id="error_nro_doc_cont"></div>
+               </td>
+            </tr>
+           <tr>
+             <td align="right"><strong>Fecha Documento :</strong></td> 
+               <td><input class="txt_campo" type="text" name="fec_doc_cont" maxlength="60"id="fec_doc_cont">
+                   <div id="error_fec_ini"></div>
+             </td>
+            </tr>
+
+             <tr>
+             <td align="right"><strong>Observaciones :</strong></td>
+               <td><textarea  name="obs_cont" id="obs_cont" cols="50" rows="2"></textarea>            
+                   <div id="error_desc"></div>
+               </td>
+            </tr>
+              
+           <tr>
+             <td></td>
+			 <td> <br><input class="btn_form" type="submit" name="accion" value="Grabar" onclick="new GestionImportacion().grabarFormularioContrato()"></td>
+           </tr>
+       </table>
+    <!--/form-->
+</div>
+
+
+</div>

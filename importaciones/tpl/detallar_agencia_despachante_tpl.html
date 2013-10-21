@@ -1,0 +1,61 @@
+<link href="../../css/estilo.css" rel="stylesheet" type="text/css">
+<div id="formulario_nuevo_agencia_depach" title="Formulario Transacci&oacute;n Aduanera" style="display:none; width: 300px;">
+<form id="formAgeAdu" >
+     		<table>
+	            <!-- Nombre de  form agencia-->
+	            <tr>
+                <td><strong>C&oacute;digo Proyecto:</strong></td> 
+                    <td> <label id="codigo_proyectos"></label><input type="hidden" value="" name="codigo_proyecto_hidden_age" id="codigo_proyecto_hidden_age" />
+                </td>
+           		</tr> 
+                <tr> 
+	                  <td align="left"><strong>Agencia Aduanera:</strong></td>
+	                  <td> {cod_agencia}<!--{proyecto_tipo}-->
+	                  	<!--inputtype="text" name="age" maxlength="60" size="40" id="age"--></td>
+                      <td align="left"><strong>Nro. Factura:</strong></td>
+          			  <td align="left"><input type="text" id="nro_fac_age" name="nro_fac_age" onKeyPress="return soloNum(event)"></td>
+	            </tr>
+	             <tr>
+                      <td align="left"><strong>Fecha:</strong></td>
+			          <td align="left"> <input type="text" id="fec_age" name="fec_age"></td>  								  
+		              <td align="left"><strong>Nro. Sidunea:</strong></td> 
+		              <td align="left"><input type="text" id="nro_sid_age" name="nro_sid_age"><input type="hidden" id="accion" name="accion" value="grabarNuevoAgeDespach"><div id="error_nro_sid"></div></td>
+				 </tr>
+                    <tr>
+                      <td align="left"><strong>Mercaderia:</strong></td>
+			          <td align="left"> <input type="text" id="merc" name="merc"><div id="error_merc"></div></td>  								  
+		              <td align="left"><strong>Bultos:</strong></td> 
+		              <td align="left"><input type="text" id="bulto" name="bulto" style="width:60px" onKeyPress="return soloNum(event)"> {unid_med_bulto}<div id="error_bulto"></div></td>
+                    
+				 </tr>
+                 <tr>
+                      <td align="left"><strong>Peso:</strong></td> 
+		              <td align="left"><input type="text" id="peso" name="peso" style="width:60px" onKeyPress="return soloNum(event)"> {unid_med_peso}<div id="error_bulto"></div></td>
+                      <td align="left"><strong>Factura Comercial:</strong></td>
+			          <td align="left"> <input type="text" id="fac_comer" name="fac_comer"><div id="error_fac_comer"></div></td>  								   
+				 </tr>
+                 <tr>
+                      <td align="left"><strong>Valor CIB Bs.:</strong></td> 
+		              <td align="left"><input type="text" id="val_cib" name="val_cib" onKeyPress="return soloNum(event)"><div id="error_val_cib" onKeyPress="return soloNum(event)"></div></td>
+                      <td align="left"><strong>Proveedor:</strong></td>
+			          <td align="left">{cod_proveedor}</td>  								  
+				 </tr>
+				 </table> 
+           <table class="table_usuario">
+         		 <tr>
+                    <td align="center"><b>ITEM</b></td>
+                    <td align="center"> <b>DESCRIPCION</b></td>
+                    <td align="center"><b>MONTO</b></td>
+                    <td align="center"><b>FACTURA</b></td>
+                </tr>
+                {cod_item}
+                
+             </table>
+               <table align="center">
+                <tr>
+				<td><br><input class="btn_form" type="submit" name="accion" value="Grabar Form. Agencia"></td>
+                </tr>
+                </table>
+               
+             </form>
+</div>

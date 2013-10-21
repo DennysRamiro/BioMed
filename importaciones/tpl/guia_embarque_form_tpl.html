@@ -1,0 +1,50 @@
+<div id="formulario_nueva_guia_embarque" title="Guia Embarque" style="display:none; width: 300px;" >
+ <!--form name="form2" method="post" action="alm_gest_imp_grab.php" onSubmit="return ValidaCamposAltaContrato(this)"-->
+         <table align="center" BORDER="0">
+            <tr>
+              <tr>
+                <td align="right"><strong>C&oacute;digo Proyecto :</strong></td> 
+                     <td>
+                     <label id="label_codigo_proyectos"></label><input type="hidden" value="" id="codigo_proyectos_hidden" />
+                     </td>  
+                </td>
+            </tr>     
+             
+              <tr>
+                    <td align="right"><strong>N&uacute;mero de Documento :</strong></td>
+                   <td><input  class="txt_campo" name="nro_doc_guia" id="nro_doc_guia" cols="50" rows="2"><div id="error_nro_doc_guia"></div>
+                   </td>
+             </tr>
+              <tr>
+                   <td align="right"><strong>Fecha Documento :</strong></td> 
+                   <td><input class="txt_campo" type="text" name="fec_doc_guia" maxlength="60"id="fec_doc_guia">
+                   <div id="error_fec_doc_guia"></div>
+                   </td>
+             </tr>
+
+             <tr>
+                 <td align="right"><strong>Observaciones :</strong></td>
+                 <td><textarea  name="obs_guia" id="obs_guia" cols="50" rows="2"></textarea>            
+                   <div id="error_obs_guia"></div>
+                 </td>
+            </tr>
+            <!--table align="left"-->
+            <form id="radio">
+             <tr>
+                 <th align="right">Con Certificado :</th>
+                 <td><input type="radio" name="cert_emb"  value="1"></td>
+             </tr>
+             <tr>
+                 <th align="right">Sin Certificado :</th>
+                 <td><input type="radio" name="cert_emb"  value="0"></td>
+             </tr>
+           <!--/table-->
+           </form>
+             <tr>
+                 <td></td>
+    			       <td> <br><input class="btn_form" type="submit" name="accion" value="Grabar" onclick="new GestionImportacion().grabarFormularioGuiaEmbarque()"></td>
+           </tr>
+       </table>
+    <!--/form-->
+</div>
+</div>

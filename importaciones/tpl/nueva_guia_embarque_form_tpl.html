@@ -1,0 +1,59 @@
+<div id="formulario_nueva_guia_embarque_lista" title="Nueva Guia Embarque" style="display:none; width: 300px;" >
+ <!--form name="form2" method="post" action="alm_gest_imp_grab.php" onSubmit="return ValidaCamposAltaContrato(this)"-->
+         <table align="center" BORDER="0">
+              
+            <tr>
+                <td align="right"><strong>C&oacute;digo Proyecto :</strong></td> 
+                     <td>
+                     <label id="label_codigos_proyectos_ge"></label><input type="hidden" value="" id="codigos_proyectos_hidden_ge" />
+                     </td>  
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><strong>C&oacute;digo Proveedor :</strong></td> 
+                     <td>
+                     <label id="label_codigos_proveedor_ge"></label><input type="hidden" value="" id="codigos_proveedor_hidden_ge" />
+                     </td>  
+                </td>
+            </tr>   
+              <tr>
+             <td align="right"><strong>N&uacute;mero de Documento :</strong></td> 
+               <td><input class="txt_campo" type="text" name="cod_ge_doc" maxlength="60"id="cod_ge_doc">
+                   <div id="error_cod_ge_doc"></div>
+             </td>
+            </tr>
+           <tr>
+             <td align="right"><strong>Fecha Documento  :</strong></td> 
+               <td><input class="txt_campo" type="text" name="fec_ge_doc" maxlength="60"id="fec_ge_doc">
+                   <div id="error_fec_ge_doc"></div>
+             </td>
+            </tr>
+			
+             <tr>
+             <td align="right"><strong>Observaciones :</strong></td>
+               <td><textarea  name="obs_ge_doc" id="obs_ge_doc" cols="50" rows="2"></textarea>            
+                   <div id="error_obs_ge_doc"></div>
+               </td>
+            </tr>
+            <form id="radio">
+             <tr>
+                 <th align="right">Con Certificado :</th>
+                 <td><input type="radio" name="cert_emb_lis"  value="1"></td>
+             </tr>
+             <tr>
+                 <th align="right">Sin Certificado :</th>
+                 <td><input type="radio" name="cert_emb_lis"  value="0"></td>
+             </tr>
+           <!--/table-->
+           </form>
+              
+           <tr>
+             <td></td>
+			 <td> <br><input class="btn_form" type="submit" name="accion" value="Grabar" onclick="new GestionImportacion().grabarFormularioGuiaEmbarqueLista()"></td>
+           </tr>
+       </table>
+    <!--/form-->
+</div>
+
+
+</div>

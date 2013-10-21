@@ -1,0 +1,52 @@
+<div id="tpl_alm_form_traspaso_detalle" style="display:none;" title="Detalle Traspaso Almacenes">
+	<h3><img src="../img/traspaso_alm_32x32.png" align="absmiddle"> Modificar Cabecera Traspaso</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_traspaso_detalle">
+		<table  border="0" id="tb_cab_trasp" align="center">
+      <tr>
+        <td colspan="2" rowspan="2" align="center" valign="middle"><img src="../img/logo.png" align="absmiddle" width="235" height="45"></td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+        <td><h2><label for="numero_unico" id="nro_nota1">NRO:</label><input type="text" name="nro_nota_trasp_det" id="nro_nota_trasp_det" class="txt_campo" readonly="readonly"></h2></td>
+      </tr>
+      <tr>
+        <td colspan="6"><h2><center>NOTA DE SALIDA</center></center></h2></td>
+      </tr>
+      <tr>
+        <td ><label for="textfield">NOMBRE :</label></td>
+        <td ><input type="text" name="alm_nom_trasp_det" id="alm_nom_trasp_det" class="txt_campo">
+             <input type="hidden" name="alm_unico_trasp_det" id="alm_unico_trasp_det" class="txt_campo">
+             <input type="hidden" name="alm_motivo_trasp_det" id="alm_motivo_trasp_det" class="txt_campo">
+             <div id="div_error_nombre_trasp_det"></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td><label for="textfield">FECHA :</label></td>
+        <td><input type="text" name="alm_fec_trasp_det" id="alm_fec_trasp_det" class="txt_campo">
+        	<div id="div_error_fecha_trasp_det"></td>
+      </tr>
+      <tr>
+        <td><label for="textfield">ORIGEN :</label></td>
+        <td>{origen}<div id="div_error_origen_trasp_det"></select></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td><label for="textfield">DESTINO :</label></td>
+        <td>{destino}<div id="div_error_destino_trasp_det"></select></td>
+
+		</table>
+      <p>
+      <center> <input type="submit" value="Modificar Nota de Traspaso" id="bt_submit_alm_nuevo_trasp" class="btn_form" ><input type="button" value="Cancelar" class="btn_form" onclick="new Traspaso().closeDialogModificarTraspCab();"></center>
+      <br>
+        <hr style="border:1px dashed;">
+        <!--div id="btn_acciones">        
+        </div-->
+		<table  border="0" id="tb_det_trasp" align="left">
+
+		</table>
+
+	</form>
+</div>

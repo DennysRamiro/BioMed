@@ -1,0 +1,42 @@
+<div id="formulario_detallar_certificado" title="Detallar Certificado" style="display:none; width: 300px;" >
+ <div id="tabla_datos_certificado_detalle">
+ 	  <label><strong>CODIGO PROYECTO:</strong> </label><span id="codigo_proyecto_detalle_div"></span><br>
+      <input type="hidden" value="" id="id_certificado_detalle_hidden"/>
+      <input type="hidden" id="codigos_proyecto_detalle_hidden" value=""/><br>
+ 
+               <table>
+                  <tr>
+                      <td ><strong>Nro. de Documento :</strong></td>
+                      <td><input type="text" class="txt_campo" name="nro_doc_certs_det" id="nro_doc_certs_det" value="{nro_doc_det}">
+                          <div id="error_nro_doc_certs_det"></div>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td ><strong>Fecha Documento :</strong></td>
+                      <td><input class="txt_campo" type="text" name="fec_doc_certs_det" maxlength="60"id="fec_doc_certs_det" value="{fecha_doc_det}">
+                          <div id="error_fec_doc_certs_det"></div>
+                      </td>
+                  </tr>
+                   <tr>
+                   <td ><strong>Comisi&oacute;n del Certificado :</strong></td> 
+                     <td><input class="txt_campo" type="text" name="comis_cert_otros_det" maxlength="60"id="comis_cert_otros_det">
+                         <div id="error_comis_cert_otros_det"></div>
+                   </td>
+                  </tr>
+
+                  <tr>
+                      <td ><strong>Observaciones :</strong></td>
+                      <td><textarea  name="obs_certs_det" id="obs_certs_det" cols="50" rows="2">{obs_doc_det}</textarea>            
+                          <div id="error_obs_certs_det"></div>
+                      </td>              
+                  </tr> 					
+           </table>
+                             <tr align="center">
+                                <td> <br><input class="btn_form" type="button" name="accion" value="Modificar" onClick="new Proyecto().actualizaEstadoProyecto(codigos_proyecto_c_hidden,9);"></td>
+                                <td><input class="btn_form" type="button" name="accion" value="Dar de baja" onClick="new Proyecto().actualizaEstadoProyecto(codigos_proyecto_c_hidden,9);"></td>
+                                <td><input class="btn_form" type="button" name="accion" value="Cancelar" onClick="new Proyecto().actualizaEstadoProyecto(codigos_proyecto_c_hidden,9);"></td>
+                            </tr> 
+
+		</div>
+	</div>

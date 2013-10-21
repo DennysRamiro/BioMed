@@ -1,0 +1,37 @@
+<div id="tpl_alm_form_modificar_ingreso_det" style="display:none;" title="Modificar Item">
+	<h3><img src="../img/alm_ing_32x32.png" align="absmiddle"> MODIFICACION ITEM</h3>
+	<hr style="border:1px dashed;">
+	<form id="form_alm_modificar_ingreso_det">
+
+  <table border="0">
+ 
+
+ </tr>
+  <tr>
+   <td><label for="textfield4">DESCRIPCION:</label></td>
+    <td><input type="text" name="alm_det_desc_edit" id="alm_det_desc_edit" class="txt_campo"><div id="div_error_descp"></div></td>
+     <td><label for="textfield3">CANT:</label></td>
+    <td><input type="text" name="alm_det_cantidad_edit" id="alm_det_cantidad_edit" class="txt_campo">
+        <input type="hidden" name="alm_cab_unico_edit" id="alm_cab_unico_edit" class="txt_campo">
+        <div id="div_error_cantidad"></div></td>
+  </tr>
+
+  <tr>
+    <td>CODIGO INT.:</td>
+    <td><input type="text" name="alm_det_cod_int_edit" id="alm_det_cod_int_edit" class="txt_campo" readonly="readonly"><div id="div_error_cod_int"></div></td>
+     <td><label for="textfield2">REFERENCIA:</label></td>
+    <td><input type="text" name="alm_det_ref_edit" id="alm_det_ref_edit" class="txt_campo" readonly="readonly">
+        <input type="hidden" name="alm_det_unico_cab_edit" id="alm_det_unico_cab_edit" class="txt_campo">
+        <div id="div_error_ref"></div></td>
+  <tr>
+    <td><label for="textfield5">UNIDAD:</label></td>
+    <td>{unidad_edit}<div id="div_error_unidad"></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+  
+        <br>
+        <center><input type="submit" value="MODIFICAR ITEM" id="bt_submit_alm_nuevo_ingreso_det_edit" class="btn_form"><input type="button" value="Cancelar" id="btn_cancelar_mod_det" class="btn_form" onclick="new Index().cancelaItemsModDetalle()"></center>
+	</form>
+</div>
